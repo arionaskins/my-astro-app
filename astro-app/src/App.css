@@ -1,10 +1,32 @@
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.container {
+  background-color: rgb(240, 234, 214);
+  background-size: cover;
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:-1px -1px 8px 20px rgba(0, 0, 0, 0.2), 3px 8px 20px 9px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.wrapper {
+    background-image: url(./img/background.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -27,12 +49,32 @@
 .App-link {
   color: #61dafb;
 }
+.sign-png {
+  width: 15%;
+  height: auto;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.birthday-info-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70vw; 
+}
+.birthday-info-container {
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.reset-button-container {
+display: flex;
+justify-content: center;
+padding-bottom: 10px;
+}
+
+#element {
+  color: #02aeda;
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import MyForm from './form.js';
-import GetMySunSign from './GetMySunSign.js';
+import UserBirthdayForm from './UserBirthdayForm.js';
+import DisplayUserSunSign from '../Display/DisplayUserSunSign.js';
 
-export default class UserResults extends React.Component {
+export default class GetUserBirthday extends React.Component {
     constructor(props) {
         super(props)
     
@@ -10,7 +10,8 @@ export default class UserResults extends React.Component {
             month: "",
             day: "",
             year: '',
-            visibility: false // default hidden without DOB
+            visibility: false
+             // default hidden without DOB
           }
           this.handleMonthChange = this.handleMonthChange.bind(this);
           this.handleDayChange = this.handleDayChange.bind(this);
@@ -58,7 +59,7 @@ export default class UserResults extends React.Component {
             if (!this.state.visibility) {
             return (
               <div>
-                <MyForm
+                <UserBirthdayForm
                     formData={this.state}
                     handleSubmit={this.handleSubmit}
                     handleMonthChange={this.handleMonthChange}
@@ -67,14 +68,15 @@ export default class UserResults extends React.Component {
                 />
                 </div> )
         } else {
-            return (<span><br /><br /><br /><br />
-            <GetMySunSign month={this.state.month} day={this.state.day} year={this.state.year} />
-                <h2>thanx wow congrat u were born on {this.state.month} {this.state.day}, {this.state.year} congrat</h2>
-                <button type='button' onClick={this.handleReset}>TRY AGAIN! ((((((:</button>
-              
-              </span>)
+            return ( <div className='birthday-info-wrapper'>
+                      <DisplayUserSunSign month={this.state.month} day={this.state.day} year={this.state.year} />
+                      <div className='reset-button-container'>
+                        <button type='button' onClick={this.handleReset}>sTaRt oVur ((((((:</button>
+                      </div>
+                    
+                    </div> )
         }
-          // <GetMySunSign usr_day={} usr_mo={} usr_yr={} />
+         
           }
 
 }
