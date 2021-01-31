@@ -4,7 +4,7 @@ import React from 'react'
 
       render() {
         return (
-          <form onSubmit={event => this.props.handleSubmit(event)} >
+          <form className='myForm' onSubmit={event => this.props.handleSubmit(event)} >
               <h4> Enter your birthday below </h4>
               <br />
 
