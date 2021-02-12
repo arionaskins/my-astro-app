@@ -1,3 +1,29 @@
+.wrapper {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  background-image: url(./img/background.jpg);
+height: 100vh;
+background-position: center;
+background-repeat: no-repeat;
+background-color: rgb(255, 255, 255);
+background-size: cover;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+
+@media only screen  and (min-width : 768px) {
 
 .container {
   background-color: rgb(240, 234, 214);
@@ -5,10 +31,17 @@
   flex-wrap: wrap;
   flex-direction: column;
   display: flex;
+  padding: 4%;
   align-items: center;
   justify-content: center;
   box-shadow:-1px -1px 8px 20px rgba(0, 0, 0, 0.2), 3px 8px 20px 9px rgba(0, 0, 0, 0.2);
-
+  width: 60%;
+  /* height: 60vh;
+  width: 100vh; 
+   new 
+padding-top: 1.5rem;
+padding-bottom: 1.5rem;
+  width: 60%; */
 }
 
 
@@ -25,12 +58,12 @@
   justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#title-div {
+  text-align: center;
 }
-
+.newD {
+  width: 100%;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -42,11 +75,11 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 .sign-png {
-  width: 15%;
+  max-width: 7.5rem;
+  height: auto;
+}
+select .myForm {
   height: auto;
 }
 
@@ -71,6 +104,34 @@ justify-content: center;
 padding-bottom: 10px;
 }
 
-#element {
-  color: #02aeda;
+select, input {
+  width: 6rem;
+  height: 3em;
 }
+
+select:hover , input:hover, input:hover label, input:hover::placeholder {
+  color:  #006622;border: 1px solid transparent;
+  box-shadow: 0 0 3px 0  #006622;
+  color: #006622;
+  
+  }
+/* sel, inp,
+width: 6rem;
+height: 3em;
+padding: .25em;
+text-align: center;
+} */
+}
+
+/* container
+
+
+
+
+newDiv 
+
+*/    
+/* containfer after sunsigndiv 
+min-width: 70%;
+height: 65vh;
+} */

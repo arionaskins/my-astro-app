@@ -11,7 +11,7 @@ class App extends React.Component {
             backgroundImage: `url('./img/background.jpg')` 
           }} className='wrapper'>
             <div className='container'>
-              <div className='newD'>
+              <div className='newD' id='title-div'>
             <Title />
              <Landing />
              </div>

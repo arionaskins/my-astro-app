@@ -6,10 +6,9 @@ import React from 'react'
         return (
           <form className='myForm' onSubmit={event => this.props.handleSubmit(event)} >
               <h4> Enter your birthday below </h4>
-              <br />
 
               <div class='dob-input-container' style={{border: "5px"}}>
-                <span class='date-input-box'>
+                <div class='date-input-box'>
 
                 <select name={this.props.name} value={this.props.formData.month} onChange={event => this.props.handleMonthChange(event)}>
                   <option name='January' value="0">January</option>
@@ -26,22 +25,22 @@ import React from 'react'
                   <option name='December' value="11">December</option>
                 </select>
 
-                </span>
+                </div>
   
-                <span class='date-input-box'>
+                <div class='date-input-box'>
                 <label>Enter day</label>
                 <div>
                 <input type='text' 
                 onChange={event => this.props.handleDayChange(event)}
-                value={this.props.formData.day} /> </div> </span>
+                value={this.props.formData.day} /> </div> </div>
   
-                <span class='date-input-box'>
-                
-                <label >Enter year</label>
+                <div class='date-input-box'>
+                             
                 <div>
+                <label >Enter year</label>
                 <input type='text' 
                 onChange={event => this.props.handleYearChange(event)}
-                value={this.props.formData.year} /></div> </span>
+                value={this.props.formData.year} /></div> </div>
                 </div>
                 
 

@@ -6,7 +6,7 @@ class Landing extends React.Component {
         super(props)
         
         this.state = {
-            landingVisibility: false // referring to sun sign visbility
+            landingVisibility: false // referring to sun sign visibility
         }
       }
 
@@ -47,6 +47,13 @@ export default Landing;
 
 
 
+export const Title = () => {
+  return (
+    <div id='title-div'>
+      <h1>WHAT'S MY SUN SIGN?</h1>
+    </div>
+  )
+}
 
 
   
