@@ -31,11 +31,9 @@ justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
   display: flex;
-  padding: 4%;
   align-items: center;
   justify-content: center;
   box-shadow:-1px -1px 8px 20px rgba(0, 0, 0, 0.2), 3px 8px 20px 9px rgba(0, 0, 0, 0.2);
-  width: 60%;
   /* height: 60vh;
   width: 100vh; 
    new 
@@ -62,7 +60,12 @@ padding-bottom: 1.5rem;
   text-align: center;
 }
 .newD {
-  width: 100%;
+  width: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(240, 234, 214);
+    background-position: center center;
 }
 .App-header {
   background-color: #282c34;
@@ -123,12 +126,20 @@ text-align: center;
 } */
 }
 
-/* container
+/* titleD
+    width: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(240, 234, 214);
+    background-position: center center;
+}
 
 
 
 
-newDiv 
+dob input cont
+flex 
 
 */    
 /* containfer after sunsigndiv 
