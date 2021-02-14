@@ -2,7 +2,8 @@
 
 This web app calculates sun sign placements using entered date of birth.
 
-
+<br>
+<br>
 
 ##### In the works..
 - [x] responsive UI for large viewports
