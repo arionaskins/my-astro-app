@@ -7,8 +7,7 @@ Just enter the birthday using the form and viola!<br>
 
 <br>
 <br>
-
-Bare with me as I am currently :sparkles: improving :sparkles: this app :)
+Bare with me as I am currently :sparkles:*improving*:sparkles: this app :)
 ##### In the works..
 - [x] responsive UI for large viewports
   - [ ] small viewport UI
