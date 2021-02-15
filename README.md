@@ -1,11 +1,11 @@
-# SUN SIGN CALCULATOR :sunny: <br>
+# SUN SIGN CALCULATOR APP :sunny: <br>
 Written and compiled in JS and React by me :) <br><br>
 This web app calculates sun sign placements using your (or someone else's) birthday.<br>
-Just enter the birthday using the form and viola!<br>
-<br><br>
+Just enter the birthday using the form and *viola*!<br>
+<br>
 
 ~~[Click Here to run my astro app!](heroku_link_here)<br>~~
-<br><br><br>
+<br><br>
 
 Bare with me as I am currently :sparkles:improving:sparkles: this app :)<br>
 __________________________________
