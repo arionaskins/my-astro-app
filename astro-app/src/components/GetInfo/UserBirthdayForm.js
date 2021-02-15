@@ -5,12 +5,25 @@ import React from 'react'
       render() {
         return (
           <form className='myForm' onSubmit={event => this.props.handleSubmit(event)} >
-              <h4> Enter your birthday below </h4>
+              <h4 id='dob-inputs-label'> Enter your birthday below </h4>
 
-              <div class='dob-input-container' style={{border: "5px"}}>
-                <div class='date-input-box'>
+              <div className='dob-input-container' style={{border: "5px"}}>
 
-                <select name={this.props.name} value={this.props.formData.month} onChange={event => this.props.handleMonthChange(event)}>
+                <input type='text' 
+                placeholder='XX'
+                maxLength={2}
+                onChange={event => this.props.handleDayChange(event)}
+                value={this.props.formData.day}
+                className='dob-opt'
+                id='day'
+                required />  
+
+
+                <select name={this.props.name} 
+                        value={this.props.formData.month}
+                        onChange={event => this.props.handleMonthChange(event)}
+                        className='dob-opt'
+                        id='month-selector' required>
                   <option name='January' value="0">January</option>
                   <option name='February' value="1">February</option>
                   <option name='March' value="2">March</option>
@@ -25,25 +38,17 @@ import React from 'react'
                   <option name='December' value="11">December</option>
                 </select>
 
-                </div>
-  
-                <div class='date-input-box'>
-                <label>Enter day</label>
-                <div>
                 <input type='text' 
-                onChange={event => this.props.handleDayChange(event)}
-                value={this.props.formData.day} /> </div> </div>
-  
-                <div class='date-input-box'>
-                             
-                <div>
-                <label >Enter year</label>
-                <input type='text' 
+                placeholder='XXXX'
+                maxLength={4}
+                minLength={4}
                 onChange={event => this.props.handleYearChange(event)}
-                value={this.props.formData.year} /></div> </div>
-                </div>
-                
-
+                value={this.props.formData.year} 
+                className='dob-opt'
+                id='year' 
+                required/>
+              
+              </div>
               <div>
                <button id='btn' type="submit">GET MY SUN SIGN</button> 
               </div>      

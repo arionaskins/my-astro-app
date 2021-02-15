@@ -1,6 +1,6 @@
 import React from 'react'
 // new box with sign in it AFTER CLICK
-const GetSunSignDiv =  (props) => {
+const GetSunSignDiv = (props) => {
 
     //initialize userSign var to contain sign name
     var userSign = props.sign;
@@ -30,9 +30,15 @@ var signLink = 'http://astrologyk.com/zodiac/planets/sun/' + userSign.toLowerCas
     return (
         <div>
             <img className='sign-png' src={`../../img/zodiac/${userSign.toLowerCase()}.png`} alt="Logo" />
-            <h1>{userSign.toUpperCase()} </h1>
+            <h1 id='sun-sign-name'>{userSign.toUpperCase()} </h1>
             <div>
-                <h4>Element: <span id='element'>{signElement}</span> | Keywords: {signKeywords[0]} & {signKeywords[1]} | <a href={signLink}>Click here for more info on {userSign}</a></h4>
+                <span>
+                    <p>
+                        <b>Element: </b>{signElement}  |
+                        <b> Keywords: </b> {signKeywords[0]} & {signKeywords[1]}  | 
+                        <a href={signLink}> Click here for more info on {userSign} </a>
+                    </p>
+                </span>
             </div> 
         </div>
     )

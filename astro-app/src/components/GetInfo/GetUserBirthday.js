@@ -71,7 +71,7 @@ export default class GetUserBirthday extends React.Component {
             return ( <div className='birthday-info-wrapper'>
                       <DisplayUserSunSign month={this.state.month} day={this.state.day} year={this.state.year} />
                       <div className='reset-button-container'>
-                        <button type='button' onClick={this.handleReset}>sTaRt oVur ((((((:</button>
+                        <button type='button'  id='start-over-btn' onClick={this.handleReset}>start over :)</button>
                       </div>
                     
                     </div> )

@@ -1,17 +1,16 @@
-.wrapper {
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgb(255, 255, 255);
-  background-size: cover;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
+
+@media only screen  and (max-width : 767px) {
+  body {
+    font-family: 'Roboto Slab', serif;   
+  }
+   
+   
+   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+   }
 
 .wrapper {
-  background-image: url(./img/background.jpg);
+  
 height: 100vh;
 background-position: center;
 background-repeat: no-repeat;
@@ -21,18 +20,27 @@ display: flex;
 flex-wrap: wrap;
 align-items: center;
 justify-content: center;
+  }
+
+  .container {
+    background-color: rgb(240, 234, 214);
+    width: 70vw;
+    box-shadow:-1px -1px 8px 20px rgba(0, 0, 0, 0.2), 3px 8px 20px 9px rgba(0, 0, 0, 0.2);
+    }
 }
 
 @media only screen  and (min-width : 768px) {
-
+  body {
+    font-family: 'Roboto Slab', serif;   
+  }
+   
+   
+   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+   }
 .container {
   background-color: rgb(240, 234, 214);
-  background-size: cover;
-  flex-wrap: wrap;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 70vw;
   box-shadow:-1px -1px 8px 20px rgba(0, 0, 0, 0.2), 3px 8px 20px 9px rgba(0, 0, 0, 0.2);
   /* height: 60vh;
   width: 100vh; 
@@ -60,37 +68,20 @@ padding-bottom: 1.5rem;
   text-align: center;
 }
 .newD {
-  width: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: rgb(240, 234, 214);
-    background-position: center center;
+
 }
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
 
 .sign-png {
   max-width: 7.5rem;
   height: auto;
 }
-select .myForm {
-  height: auto;
+#day {
+  width: 2em;
 }
 
-.birthday-info-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 70vw; 
+#year {
+  width: 3.9rem;
 }
 .birthday-info-container {
   display: flex;
@@ -106,18 +97,65 @@ display: flex;
 justify-content: center;
 padding-bottom: 10px;
 }
-
-select, input {
-  width: 6rem;
+#dob-input-container {
+  padding-top: .5em;
+  padding-bottom: 2rem;
+}
+.dob-opt {
   height: 3em;
+  font-size: medium;
 }
 
-select:hover , input:hover, input:hover label, input:hover::placeholder {
+#dob-inputs-label {
+  padding-top: 2.2em;
+}
+
+#year, #day {
+text-align: center;
+}
+
+#btn, #start-over-btn {
+  padding: .3rem;
+    margin-top: 2rem;
+    margin-bottom: 1.8rem;
+}
+
+#start-over-btn {
+    margin-top: .8rem;
+    margin-bottom: 1.2em;
+}
+#user-dob-str, #user-dob-label, #sun-sign-label {
+  margin-top: .25em;
+}
+#sun-sign-name {
+  margin: .25em;
+}
+
+#month-selector {
+  height: 3.4rem;
+  width: 9rem;
+  padding-left: 0.5em;
+}
+select:hover , #btn:hover, #start-over-btn:hover, input:hover, input:hover label, input:hover::placeholder {
   color:  #006622;border: 1px solid transparent;
   box-shadow: 0 0 3px 0  #006622;
   color: #006622;
-  
   }
+
+#month-selector::placeholder {
+  font-stretch: expanded;
+  padding-right: 0.5em;
+}
+
+#year::placeholder, #day::placeholder {
+  text-align: center;
+  color: gray;
+  opacity: 1;
+}
+
+#year, #month-selector {
+  margin-left: 0.4rem;
+}
 /* sel, inp,
 width: 6rem;
 height: 3em;

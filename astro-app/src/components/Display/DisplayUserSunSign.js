@@ -7,7 +7,7 @@ const DisplayUserSunSign = (props) => {
     var dob = new Date(props.year, props.month, props.day);
     var getDay = props.day; 
     var getMonth = dob.getMonth();
-    //initalize userSign var to contain sign name
+    //initialize userSign var to contain sign name
     var userSign = '';
     
 
@@ -81,9 +81,9 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
 
     return (
         <div className='birthday-info-container'>
-            <h4>Your Birthday:</h4>
+            <h4 id='user-dob-label'>Your Birthday:</h4>
             
-            <p>{monthStr} {props.day}, {props.year}</p>
+            <p id='user-dob-str'>{monthStr} {props.day}, {props.year}</p>
             
             <h2>YOUR SUN SIGN:</h2>
            
