@@ -4,7 +4,7 @@ This web app calculates sun sign placements using your (or someone else's) birth
 Just enter the birthday using the form and viola!<br>
 <br><br>
 
-[Click Here to run my astro app!](heroku_link_here)<br>
+~~[Click Here to run my astro app!](heroku_link_here)<br>~~
 <br><br><br>
 
 Bare with me as I am currently :sparkles:improving:sparkles: this app :)<br>
