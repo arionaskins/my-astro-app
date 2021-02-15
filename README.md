@@ -6,8 +6,7 @@ Just enter the birthday using the form and viola!<br>
 [Click Here to run my astro app!](heroku_link_here)<br>
 
 <br>
-<br>
-Bare with me as I am currently :sparkles:*improving*:sparkles: this app :)
+Bare with me as I am currently :sparkles:*improving*:sparkles: this app :)<br>
 ##### In the works..
 - [x] responsive UI for large viewports
   - [ ] small viewport UI
